@@ -1,4 +1,5 @@
 String letters = "";
+int x = 0;
 
 void setup(){
 	size(512, 512);
@@ -9,9 +10,11 @@ void setup(){
 
 void draw(){
 	background(204);
-	float cousorPositon = textWidth(letters);
-	line(cousorPositon, 0, cousorPositon, 100);
-	text(letters, 0, 50);
+	// float cousorPositon = textWidth(letters);
+	// line(cousorPositon, 0, cousorPositon, 100);
+  if(keyPressed == true) x++;
+	// text(letters, 0, 50);
+	line(x, 20, x-20, 80);
 }
 
 void KeyPressed(){

@@ -25,13 +25,15 @@ public void setup(){
 
 public void draw(){
 	background(204);
-	float cousorPositon = textWidth(letters);
-	line(cousorPositon, 0, cousorPositon, 100);
-	text(letters, 0, 50);
+	// float cousorPositon = textWidth(letters);
+	// line(cousorPositon, 0, cousorPositon, 100);
+	if(KeyPressed == true) x++;
+	// text(letters, 0, 50);
+	line(x, 20, x-20, 80);
 }
 
 public void KeyPressed(){
-	letters  = letters + key;
+	letters = letters + key;
 	// if(key == BACKSPACE){
 	// 	if(letters.length() > 0){
 	// 		letters = letters.substring(0, letters.length() - 1);
