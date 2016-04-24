@@ -10,7 +10,7 @@ float dx = 0;
 float velocity = 0.05;
 
 void setup(){
-  size(128, 128);
+  size(560, 300);
   frameRate(50);
   stroke(255);
   setRecAnimation();
@@ -18,9 +18,9 @@ void setup(){
 
 void draw(){
   background(204);
-  for(float i =0; i <10; i++){
-      randomX = random(128);
-      randomY = random(128);
+  for(float i =0; i <50; i++){
+      randomX = random(560);
+      randomY = random(300);
       rect(randomX, randomY, 10, 10);
   }
   
